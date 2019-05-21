@@ -1,0 +1,27 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/horizontal_item"
+        android:layout_width="75dp"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:gravity="top|left"
+        android:layout_marginRight="@dimen/normal_margin">
+
+    <ImageView
+            android:id="@+id/production_companies_image"
+            android:src="@drawable/loader"
+            android:layout_width="75dp"
+            android:layout_height="50dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/production_companies_name"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:textSize="@dimen/production_company_text_size"
+            tools:text="Title"/>
+
+</LinearLayout>

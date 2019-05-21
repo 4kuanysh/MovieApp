@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="logo_text">Final</string>
+
+    <string name="login_button_text">Login</string>
+    <string name="sign_up_button_text">Sign up</string>
+    <string name="log_out_button_text">Log out</string>
+
+    <string name="email_hint">Email</string>
+    <string name="surname_hint">Surname</string>
+    <string name="name_hint">Name</string>
+    <string name="password_hint">Password</string>
+    <string name="password_confirm_hint">Password confirm</string>
+
+    <string name="language">en</string>
+
+    <string name="passwords_do_not_match">Passwords do not match</string>
+    <string name="success_message">Success!</string>
+    <string name="error_message">Error</string>
+    <string name="you_must_login">You must login</string>
+
+    <string name="rating_text">rating:</string>
+
+    <string name="recommendations_title">Recommendations</string>
+    <string name="similar_title">Similar</string>
+    <string name="latest_title">Latest</string>
+    <string name="now_playing_title">Now playing</string>
+    <string name="upcoming_title">Upcoming</string>
+    <string name="popular_title">Popular</string>
+    <string name="top_rated_title">Top rated</string>
+    <string name="genres_title">Genres</string>
+    <string name="trailers_title">Trailers</string>
+    <string name="production_companies_title">Production companies</string>
+    <string name="cast_title">Cast</string>
+    <string name="my_movie_list">My list</string>
+
+
+</resources>

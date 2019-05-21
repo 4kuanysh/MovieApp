@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/bg"
+        android:orientation="vertical"
+        tools:context=".ui.activity.MovieDetailActivity">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="top">
+
+                    <com.smarteist.autoimageslider.SliderLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/imageSlider"/>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:background="@color/bg"
+                        android:padding="@dimen/normal_padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/movie_release_date"
+                                android:textColor="@color/text"
+                                android:textSize="@dimen/movie_release_date_text_size"
+                                tools:text="2019"
+                                android:layout_marginBottom="@dimen/normal_margin"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/movie_vote_average_text_size"
+                                android:text="@string/rating_text"
+                                android:textColor="@color/text"
+                                android:layout_toLeftOf="@+id/movie_average_vote"
+                                android:layout_marginStart="@dimen/normal_margin"
+                                android:layout_marginBottom="@dimen/normal_margin"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text"
+                                android:id="@+id/movie_average_vote"
+                                android:textSize="@dimen/movie_vote_average_text_size"
+                                tools:text="9.9"
+                                android:layout_toLeftOf="@id/favorite_button"
+                                android:layout_marginStart="@dimen/normal_margin"
+                                android:layout_marginBottom="@dimen/normal_margin"/>
+
+                        <ImageView
+                                android:layout_marginLeft="@dimen/normal_margin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/bookmark_icon_height"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/icon_bookmark_48_outline"
+                                android:id="@+id/favorite_button"/>
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                            android:id="@+id/movie_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/normal_margin"
+                            android:textColor="@color/title"
+                            android:textSize="@dimen/movie_detail_title_text_size"
+                            tools:text="Title"/>
+
+                    <TextView
+                            android:id="@+id/movie_overview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/normal_margin"
+                            android:textColor="@color/text"
+                            tools:text="OverviewOverviewOverviewOverviewOverviewOverviewOverview"/>
+
+                    <android.support.v7.widget.CardView
+                            android:background="@color/colorPrimary"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/normal_margin">
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/row_padding"
+                                android:background="@color/colorPrimary"
+                                android:orientation="vertical">
+                            <TextView
+                                    android:id="@+id/recommendation_list_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/category_movie_text_size"
+                                    android:textColor="@color/title"
+                                    android:layout_marginBottom="@dimen/normal_margin"
+                                    android:text="@string/recommendations_title"
+                            />
+
+                            <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recommendation_movie_list"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    tools:listitem="@layout/layout_item_movie"
+                            />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                            android:background="@color/colorPrimary"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/normal_margin">
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/row_padding"
+                                android:background="@color/colorPrimary"
+                                android:orientation="vertical">
+                            <TextView
+                                    android:id="@+id/similar_list_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/category_movie_text_size"
+                                    android:textColor="@color/title"
+                                    android:layout_marginBottom="@dimen/normal_margin"
+                                    android:text="@string/similar_title"
+                            />
+
+                            <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/similar_movie_list"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    tools:listitem="@layout/layout_item_movie"
+                            />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                            android:background="@color/colorPrimary"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/normal_margin">
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/row_padding"
+                                android:background="@color/colorPrimary"
+                                android:orientation="vertical">
+                            <TextView
+                                    android:id="@+id/video_list_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/category_movie_text_size"
+                                    android:textColor="@color/title"
+                                    android:layout_marginBottom="@dimen/normal_margin"
+                                    android:text="@string/trailers_title"
+                            />
+
+                            <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/video_list"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    tools:listitem="@layout/layout_item_trailer"
+                            />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/normal_margin">
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/row_padding"
+                                android:background="@color/colorPrimary"
+                                android:orientation="vertical">
+                            <TextView
+                                    android:id="@+id/movie_cast_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/category_movie_text_size"
+                                    android:textColor="@color/title"
+                                    android:layout_marginBottom="@dimen/normal_margin"
+                                    android:text="@string/cast_title"
+                            />
+
+                            <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/movie_cast_list"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    tools:listitem="@layout/layout_item_movie_cast"
+                            />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/normal_margin">
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/row_padding"
+                                android:background="@color/colorPrimary"
+                                android:orientation="vertical">
+                            <TextView
+                                    android:id="@+id/production_companies_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/category_movie_text_size"
+                                    android:textColor="@color/title"
+                                    android:layout_marginBottom="@dimen/normal_margin"
+                                    android:text="@string/production_companies_title"
+                            />
+
+                            <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/production_companies_list"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    tools:listitem="@layout/layout_item_production_companies"
+                            />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <!--<TextView-->
+                            <!--android:id="@+id/production_companies_title"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textColor="@color/title"-->
+                            <!--android:layout_marginBottom="@dimen/normal_margin"-->
+                            <!--android:text="@string/production_companies_title"-->
+                    <!--/>-->
+
+                    <!--<TextView-->
+                            <!--android:id="@+id/production_companies_list"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textColor="@color/text"-->
+                            <!--android:layout_marginBottom="@dimen/normal_margin"-->
+                            <!--android:text="@string/production_companies_title"-->
+                    <!--/>-->
+
+                    </LinearLayout>
+
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

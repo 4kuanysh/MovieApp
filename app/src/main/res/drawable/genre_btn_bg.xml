@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/genre_button_bg_color"/>
+
+    <corners android:radius="@dimen/genre_button_corners_radios"/>
+</shape>

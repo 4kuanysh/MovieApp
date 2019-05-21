@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#273a59</color>
+    <color name="colorPrimaryDark">#172844</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000</color>
+    <color name="logout_button_text">#929292</color>
+    <color name="bg">#172844</color>
+    <color name="genre_button_bg_color">#FF6D6D</color>
+    <color name="white">#fff</color>
+    <color name="title">#FDFDFD</color>
+    <color name="text">#DEDEE7</color>
+    
+    <color name="tabindicatorcolor">#2d2d2d</color>
+
+    <color name="login_btn_bg">#6366EE</color>
+    <color name="sign_up_bg">#3F51B5</color>
+
+    <!--E6E6E6-->
+</resources>

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="logo_text">Финал</string>
+
+    <string name="login_button_text">Вход</string>
+    <string name="sign_up_button_text">Зарегистрироваться</string>
+    <string name="log_out_button_text">Выход</string>
+
+    <string name="email_hint">Email</string>
+    <string name="surname_hint">Фамилия</string>
+    <string name="name_hint">Имя</string>
+    <string name="password_hint">Пароль</string>
+    <string name="password_confirm_hint">Подтвердить пароль</string>
+
+    <string name="language">ru</string>
+
+    <string name="passwords_do_not_match">Пароли не совпадают</string>
+    <string name="success_message">Успешно!</string>
+    <string name="error_message">Ошибка</string>
+    <string name="you_must_login">Вы должны войти</string>
+
+
+    <string name="rating_text">рейтинг:</string>
+
+    <string name="recommendations_title">Рекомендации</string>
+    <string name="similar_title">Похожие</string>
+    <string name="latest_title">Последние</string>
+    <string name="now_playing_title">Сейчас идет</string>
+    <string name="upcoming_title">Предстоящие</string>
+    <string name="popular_title">Популярные</string>
+    <string name="top_rated_title">Топ рейтинга</string>
+    <string name="genres_title">Жанры</string>
+    <string name="trailers_title">Трейлеры</string>
+    <string name="production_companies_title">Компании производители</string>
+    <string name="cast_title">Состав</string>
+    <string name="my_movie_list">Мой лист</string>
+
+
+</resources>

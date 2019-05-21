@@ -1,0 +1,59 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/vertical_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_in_vertical"
+        android:orientation="horizontal"
+        android:gravity="top|left"
+        android:background="@color/colorPrimary"
+        android:layout_margin="@dimen/normal_margin">
+
+    <ImageView
+            android:id="@+id/movie_image"
+            android:layout_width="@dimen/width_in_vertical"
+            android:layout_height="@dimen/height_in_vertical"/>
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_release_date"
+                android:textColor="@color/text"
+                android:textSize="@dimen/movie_release_date_text_size"
+                tools:text="2019"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_marginStart="@dimen/normal_margin"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_title"
+                android:textColor="@color/title"
+                android:textSize="@dimen/movie_title_text_size"
+                tools:text="Title"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/normal_margin"
+                app:layout_constraintTop_toBottomOf="@+id/movie_release_date"
+                android:layout_marginStart="@dimen/normal_margin"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_average_vote"
+                android:textColor="@color/text"
+                android:textSize="@dimen/movie_vote_average_text_size"
+                tools:text="9.9"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:layout_marginBottom="@dimen/normal_margin"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
